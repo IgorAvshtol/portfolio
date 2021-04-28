@@ -11,8 +11,8 @@ const Main = () => {
                     <h1>Igor Avshtol</h1>
                     <p>Front-end Developer</p>
                 </div>
-                    <div className={style.photo}>
-                    </div>
+                <div className={style.photo}>
+                </div>
             </div>
 
         </div>
