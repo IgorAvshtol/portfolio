@@ -1,14 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from "./Header/Header";
-import Nav from "./Nav/Nav";
 import Main from "./Main/Main";
+import Skills from "./Skills/Skills";
+import MyWorks from "./MyWorks/MyWorks";
+import Contact from "./Contact/Contact";
+import Footer from "./Footer/Footer";
 
 function App() {
     return (
         <div className="App">
             <Header/>
             <Main/>
+            <Skills/>
+            <MyWorks/>
+            <Contact/>
+            <Footer/>
 
 
         </div>
