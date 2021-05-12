@@ -10,8 +10,10 @@ const Footer = () => {
             <div className={`${styleContainer.container} ${style.footerContainer}`}>
                 <h2 className={style.title}>Avshtol Igor</h2>
                 <div className={style.footer}>
-                    <MyFooter title={"telegram"}/>
-                    <MyFooter title={"vk"}/>
+                    <MyFooter />
+                    <MyFooter />
+                    <MyFooter />
+                    <MyFooter />
                 </div>
             </div>
 
