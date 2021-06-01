@@ -1,0 +1,10 @@
+.probaUl {
+    display: flex;
+    list-style-type: none;
+
+}
+
+.probaLi{
+    margin: 10px;
+    background-color: #bf8762;
+}
