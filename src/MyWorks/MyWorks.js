@@ -9,7 +9,9 @@ const MyWorks = () => {
     return (
         <div className={style.worksBlock}>
             <div className={`${styleContainer.container} ${style.worksContainer}`}>
-                <h2 className={style.title}>My Works</h2>
+                <div className={style.title}>
+                    <h2>My Works</h2>
+                </div>
                 <div className={style.works}>
                     <div >
                         <MyProjectImg/>
