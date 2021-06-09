@@ -1,6 +1,7 @@
 import style from './Footer.module.css';
 import styleContainer from './../Common/Styles/Container.module.css';
 import MyFooter from "./MyFooter/MyFooter";
+import Title from "../Common/component/title/Title";
 
 
 
@@ -8,7 +9,7 @@ const Footer = () => {
     return (
         <div className={style.footerBlock}>
             <div className={`${styleContainer.container} ${style.footerContainer}`}>
-                <h2 className={style.title}>Avshtol Igor</h2>
+                <Title title={"Avshtol Igor"}/>
                 <div className={style.footer}>
                     <MyFooter />
                     <MyFooter />

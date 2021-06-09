@@ -2,7 +2,7 @@ import './App.css';
 import Header from "./Header/Header";
 import Main from "./Main/Main";
 import Skills from "./Skills/Skills";
-import MyWorks from "./MyWorks/MyWorks";
+import Projects from "./MyWorks/Projects";
 import Contact from "./Contact/Contact";
 import Footer from "./Footer/Footer";
 import Proba from "./Common/Proba";
@@ -13,7 +13,7 @@ function App() {
             <Header/>
             <Main/>
             <Skills/>
-            <MyWorks/>
+            <Projects/>
             <Contact/>
             <Footer/>
 

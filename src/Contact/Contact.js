@@ -1,11 +1,12 @@
 import style from './Contact.module.css';
 import styleContainer from '../Common/Styles/Container.module.css';
+import Title from "../Common/component/title/Title";
 
 
 const Contact = () => {
     return (<div className={style.contactBlock}>
             <div className={`${styleContainer.container} ${style.contact}`}>
-                <h2 className={style.title}>Contact</h2>
+                <Title title={"Contacts"}/>
                 <form className={style.formgroup}>
                     <input type="email" id="c_email" name="c_email"
                            placeholder="E-mail" required=""/>
