@@ -1,6 +1,6 @@
-import style from './MyProject.module.css';
+import style from './Project.module.scss';
 
-const MyProject = (props) => {
+const Project = (props) => {
     return (
         <div className={style.project}>
             <div className={style.projectImg} style={props.style}>
@@ -14,4 +14,4 @@ const MyProject = (props) => {
     );
 }
 
-export default MyProject;
+export default Project;

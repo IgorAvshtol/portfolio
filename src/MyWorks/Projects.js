@@ -1,7 +1,6 @@
-import style from './Projects.module.css';
+import style from './Projects.module.scss';
 import styleContainer from './../Common/Styles/Container.module.css';
-import MyProjectImg from "./MyWork/MyProjectImg";
-import MyProject from "./MyWork/MyProject";
+import Project from "./MyWork/Project";
 import Title from "../Common/component/title/Title";
 import Counter from "../assets/image/counter.jpg";
 
@@ -18,12 +17,12 @@ const Projects = () => {
             <div className={`${styleContainer.container} ${style.worksContainer}`}>
                 <Title title={"Projects"}/>
                 <div className={style.works}>
-                    <MyProject style={counter}
-                               title={"Social-network"}
-                               discription={"abcdefghdfhgdfsdg  fdfdsdfsfssfsfsfsdfs gfhfghfghfg"}/>
-                    <MyProject style={counter}
-                               title={"Count"}
-                               discription={"...hijkdfgdgdfgdf dgdfgdfh  gdg  dfgd.gdgdsgfsdfsdfsdfsdfsdfsdfs  dfsdfdsfdsfdsfdsfdsfsdfsfsfds"}/>
+                    <Project style={counter}
+                             title={"Social-network"}
+                             discription={"abcdefghdfhgdfsdg  fdfdsdfsfssfsfsfsdfs gfhfghfghfg"}/>
+                    <Project style={counter}
+                             title={"Count"}
+                             discription={"...hijkdfgdgdfgdf dgdfgdfh  gdg  dfgd.gdgdsgfsdfsdfsdfsdfsdfsdfs  dfsdfdsfdsfdsfdsfdsfsdfsfsfds"}/>
                 </div>
             </div>
         </div>
