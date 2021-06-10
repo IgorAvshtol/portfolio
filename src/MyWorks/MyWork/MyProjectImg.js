@@ -1,4 +1,4 @@
-import style from '././MyProjectImg.module.css';
+import style from '././MyProject.module.css';
 
 const MyProjectImg = () => {
     return (
