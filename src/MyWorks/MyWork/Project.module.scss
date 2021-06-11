@@ -1,3 +1,5 @@
+@import './src/Common/Styles/sass/variables';
+
 .project {
   /*background-color: navajowhite;*/
   width: 450px;
@@ -5,7 +7,7 @@
   display: flex;
   flex-direction: column;
   /*align-items: center;*/
-  color: #fff;
+  color: $textColor;
   /*padding: 0 20px;*/
   .projectImg {
     height: 190px;
@@ -21,7 +23,7 @@
     &::before {
       position: absolute;
       content: '';
-      background-color: black;
+      background-color: $bgColor;
       top: 0;
       bottom: 0;
       left: 0;
@@ -34,7 +36,7 @@
       position: relative;
       top: 50px;
       font: 400 12px/1.8 'Poppins', sans-serif;
-      background-color: #eeeef5;
+      background-color: $primaryColor;
       padding: 10px 20px;
       z-index: 1;
 
@@ -43,12 +45,12 @@
 
   .projectInfo {
     padding: 25px 20px;
-    background-color: #343a40;
+    background-color: $bgSecondColor;
     /*width: 250px;*/
     .description {
       font: 400 12px/1.8 'Poppins', sans-serif;
       letter-spacing: 1px;
-      color: #fff;
+      color: $textColor;
       /*background-color: #252527;*/
     }
 
