@@ -1,4 +1,5 @@
 @import "src/Common/Styles/sass/variables.scss";
+@import './src/Common/Styles/sass/mixins';
 
 .skillsBlock {
     min-height: 100%;
@@ -10,8 +11,9 @@
         .skills {
             border: 1px solid;
             width: 100%;
-            display: flex;
-            justify-content: space-between;
+            @include display(flex, space-between);
+            //display: flex;
+            //justify-content: space-between;
             flex-wrap: wrap;
             box-sizing: border-box;
         }

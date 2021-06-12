@@ -1,0 +1,19 @@
+@import "src/Common/Styles/sass/variables.scss";
+
+
+.mainBlock {
+    height: 100vh;
+    background-color: $bgColor;
+    .text {
+        width: 300px;
+        background-color: $textColor;
+    }
+    .photo {
+        width: 300px;
+        height: 300px;
+        background-color: antiquewhite;
+    }
+}
+
+
+

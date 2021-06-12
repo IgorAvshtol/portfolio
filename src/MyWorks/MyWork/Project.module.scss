@@ -1,19 +1,17 @@
 @import './src/Common/Styles/sass/variables';
+@import './src/Common/Styles/sass/mixins';
 
 .project {
-  /*background-color: navajowhite;*/
   width: 450px;
-  /*font: 400 14px/1.8 'Poppins', sans-serif;*/
   display: flex;
   flex-direction: column;
-  /*align-items: center;*/
   color: $textColor;
-  /*padding: 0 20px;*/
+
   .projectImg {
     height: 190px;
-    /*background-color: #bd6b6b;*/
-    display: flex;
-    justify-content: center;
+    @include display(flex, center);
+    //display: flex;
+    //justify-content: center;
     align-items: center;
     background-size: contain;
     background-position: center;
@@ -35,7 +33,11 @@
     .button {
       position: relative;
       top: 50px;
-      font: 400 12px/1.8 'Poppins', sans-serif;
+      @include text(12px, 1.8, 400);
+      //font-family: 'Poppins', sans-serif;
+      //line-height: 1.8;
+      //font-weight: 400;
+      //font-size: 12px;
       background-color: $primaryColor;
       padding: 10px 20px;
       z-index: 1;
@@ -46,12 +48,17 @@
   .projectInfo {
     padding: 25px 20px;
     background-color: $bgSecondColor;
-    /*width: 250px;*/
+
     .description {
-      font: 400 12px/1.8 'Poppins', sans-serif;
+      //font: 400 12px/1.8 'Poppins', sans-serif;
+      @include text(12px, 1.8, 400);
+      //font-family: 'Poppins', sans-serif;
+      //line-height: 1.8;
+      //font-weight: 400;
+      //font-size: 12px;
       letter-spacing: 1px;
       color: $textColor;
-      /*background-color: #252527;*/
+
     }
 
   }

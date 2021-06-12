@@ -1,4 +1,5 @@
 @import "src/Common/Styles/sass/variables";
+@import './src/Common/Styles/sass/mixins';
 
 .worksBlock {
   min-height: 100%;
@@ -15,8 +16,9 @@
   .works {
     border: 1px solid;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    @include display(flex, space-between);
+    //display: flex;
+    //justify-content: space-between;
     flex-wrap: wrap;
     /*background-color: black;*/
     box-sizing: border-box;

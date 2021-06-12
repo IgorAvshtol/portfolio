@@ -1,5 +1,5 @@
-import style from './Main.module.css';
-import styleContainer from './../Common/Styles/Container.module.css';
+import style from './Main.module.scss';
+import styleContainer from '../Common/Styles/Container.module.scss';
 
 
 const Main = () => {
