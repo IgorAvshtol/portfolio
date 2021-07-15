@@ -2,11 +2,14 @@ import style from './Skills.module.scss';
 import styleContainer from '../Common/Styles/Container.module.scss';
 import Skill from "./Skill/Skill";
 import Title from "../Common/component/title/Title";
+import Fade from 'react-reveal/Fade';
+
 
 
 const Skills = () => {
     return (
-        <div className={style.skillsBlock}>
+        <div id="skills" className={style.skillsBlock}>
+            <Fade right cascade>
             <div className={`${styleContainer.container} ${style.skillsContainer}`}>
                 <Title title={"Skills"}/>
                 <div className={style.skills}>
@@ -15,7 +18,7 @@ const Skills = () => {
                     <Skill title={"JS"} discription={"...lmnoprghkhjljk;k  gdfgdfg l;jlkjs"}/>
                 </div>
             </div>
-
+            </Fade>
         </div>
     );
 }

@@ -13,7 +13,7 @@ const Projects = () => {
 
 
     return (
-        <div className={style.worksBlock}>
+        <div id="projects" className={style.worksBlock}>
             <div className={`${styleContainer.container} ${style.worksContainer}`}>
                 <Title title={"Projects"}/>
                 <div className={style.works}>

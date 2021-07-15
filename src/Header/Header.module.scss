@@ -3,7 +3,8 @@
 
 .header {
     height: 80px;
-    background-color: $textColor;
+    //background-color: $textColor;
     @include display(flex, flex-end);
     align-items: center;
+    background-color: $bgThirdColor;
 }
