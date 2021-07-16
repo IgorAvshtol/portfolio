@@ -3,6 +3,7 @@ import styleContainer from '../Common/Styles/Container.module.scss';
 import Particles from "react-particles-js";
 import ReactTypingEffect from 'react-typing-effect';
 
+
 const particlesOpt = {
     "particles": {
         "number": {
@@ -45,7 +46,7 @@ const particlesOpt = {
             "random": false,
             "anim": {
                 "enable": true,
-                "speed": 4,
+                "speed": 3,
                 "size_min": 10,
                 "sync": false
             }
@@ -54,9 +55,14 @@ const particlesOpt = {
     "retina_detect": false
 }
 
+
+
+
+
 const Main = () => {
+
     return (
-        <div className={style.mainBlock}>
+        <div id="#Main" className={style.mainBlock}>
             <Particles className={style.particles} params={particlesOpt}/>
             <div className={styleContainer.container}>
                 <div className={style.text}>
