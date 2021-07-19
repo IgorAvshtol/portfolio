@@ -5,6 +5,7 @@ import {withStyles} from '@material-ui/core/styles';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import ListItemText from '@material-ui/core/ListItemText';
+import {Link} from "react-scroll";
 
 const StyledMenu = withStyles({
     paper: {
@@ -37,7 +38,9 @@ const StyledMenuItem = withStyles((theme) => ({
     },
 }))(MenuItem);
 
+
 const Nav = () => {
+
     const [anchorEl, setAnchorEl] = useState(null);
 
     const handleClick = (event) => {
@@ -50,15 +53,17 @@ const Nav = () => {
     };
 
     return (
+
+
         <div className={style.nav}>
             <Button
                 aria-controls="customized-menu"
                 aria-haspopup="true"
                 variant="contained"
-                color="primary"
+                color="#4e93e6"
                 onClick={handleClick}
             >
-                Open Menu
+                Menu
             </Button>
             <StyledMenu
                 id="customized-menu"
@@ -68,24 +73,21 @@ const Nav = () => {
                 onClose={handleClose}
             >
                 <StyledMenuItem>
-                    <ListItemText onClick={handleClose} primary={<a href="#skills">Skills</a>} />
+                    <ListItemText onClick={handleClose} primary={<Link to="main" smooth={true}>Main</Link>}/>
                 </StyledMenuItem>
                 <StyledMenuItem>
-                    <ListItemText onClick={handleClose} primary={<a href="#projects">Projects</a>} />
+                    <ListItemText onClick={handleClose} primary={<Link to="skills" smooth={true}>Skills</Link>}/>
                 </StyledMenuItem>
                 <StyledMenuItem>
-                    <ListItemText onClick={handleClose} primary={<a href="#contacts">Contacts</a>} />
+                    <ListItemText onClick={handleClose} primary={<Link to="projects" smooth={true}>Projects</Link>}/>
+                </StyledMenuItem>
+                <StyledMenuItem>
+                    <ListItemText onClick={handleClose} primary={<Link to="contacts" smooth={true}>Contacts</Link>}/>
                 </StyledMenuItem>
             </StyledMenu>
 
-    );
-    {/*// return (*/}
-    {/*//     <div className={style.nav}>*/}
-    {/*//         <a href="#main">Main</a>*/}
-    {/*//         <a href="#skills">Skills</a>*/}
-    {/*//         <a href="#projects">Projects</a>*/}
-    {/*//         <a href="#contacts">Contacts</a>*/}
-     </div>
+            );
+        </div>
     )
 
 }
