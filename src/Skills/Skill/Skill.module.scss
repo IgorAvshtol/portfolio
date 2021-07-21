@@ -1,0 +1,25 @@
+@import "src/Common/Styles/sass/variables";
+
+.skill {
+    /*background-color: navajowhite;*/
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.icon {
+
+    /*width: 60px;*/
+    height: 250px;
+    /*background-color: darkkhaki;*/
+}
+
+.title {
+    font-family: $fontFamily;
+    color: $textColor;
+    /*position: relative;*/
+    top: -60px
+}

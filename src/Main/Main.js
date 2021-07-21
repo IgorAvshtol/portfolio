@@ -68,7 +68,7 @@ const Main = () => {
                 <div className={style.text}>
                     <span>
                         <ReactTypingEffect
-                            text={["Hi, there"]} />
+                            text={["Hi, i'm"]} />
                     </span>
                     <h1>Igor Avshtol</h1>
                     <p><ReactTypingEffect
