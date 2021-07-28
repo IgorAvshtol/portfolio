@@ -11,14 +11,14 @@ const Skills = () => {
     return (
         <div id="skills" className={style.skillsBlock}>
             <Fade right cascade>
-            <div className={`${styleContainer.container} ${style.skillsContainer}`}>
-                <Title title={"Skills"}/>
-                <div className={style.skills}>
-                    <Skill title={"HTML"} logo={logoHtml} />
-                    <Skill title={"CSS"} logo={logoCss}/>
-                    <Skill title={"JS"} logo={logoJs}/>
+                <div className={`${styleContainer.container} ${style.skillsContainer}`}>
+                    <Title title={"Skills"}/>
+                    <div className={style.skills}>
+                        <Skill title={"HTML"} logo={logoHtml}/>
+                        <Skill title={"CSS"} logo={logoCss}/>
+                        <Skill title={"JS"} logo={logoJs}/>
+                    </div>
                 </div>
-            </div>
             </Fade>
         </div>
     );

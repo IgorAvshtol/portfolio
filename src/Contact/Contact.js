@@ -1,5 +1,4 @@
 import style from './Contact.module.scss';
-import s from '../MyWorks/MyWork/Project.module.scss';
 import styleContainer from '../Common/Styles/Container.module.scss';
 import Title from "../Common/component/title/Title";
 import * as emailjs from "emailjs-com";

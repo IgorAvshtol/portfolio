@@ -5,8 +5,6 @@ import Skills from "./Skills/Skills";
 import Projects from "./MyWorks/Projects";
 import Contact from "./Contact/Contact";
 import Footer from "./Footer/Footer";
-import Proba from "./Common/Proba";
-
 
 
 function App() {
@@ -18,8 +16,6 @@ function App() {
             <Projects/>
             <Contact/>
             <Footer/>
-
-
 
 
         </div>

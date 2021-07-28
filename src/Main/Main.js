@@ -2,7 +2,9 @@ import style from './Main.module.scss';
 import styleContainer from '../Common/Styles/Container.module.scss';
 import Particles from "react-particles-js";
 import ReactTypingEffect from 'react-typing-effect';
-
+import ava from '../assets/image/ava.jpg';
+import react from '../assets/image/react.png';
+import js from '../assets/image/js.png';
 
 const particlesOpt = {
     "particles": {
@@ -27,12 +29,12 @@ const particlesOpt = {
             ],
             "image": [
                 {
-                    "src": '/images/js.png',
+                    "src": js,
                     "height": 20,
                     "width": 20
                 },
                 {
-                    "src": '/images/react.png',
+                    "src": react,
                     "height": 20,
                     "width": 20
                 },
@@ -56,9 +58,6 @@ const particlesOpt = {
 }
 
 
-
-
-
 const Main = () => {
 
     return (
@@ -68,7 +67,7 @@ const Main = () => {
                 <div className={style.text}>
                     <span>
                         <ReactTypingEffect
-                            text={["Hi, i'm"]} />
+                            text={["Hi, i'm"]}/>
                     </span>
                     <h1>Igor Avshtol</h1>
                     <p><ReactTypingEffect
@@ -76,7 +75,7 @@ const Main = () => {
                     </p>
                 </div>
                 <div className={style.photo}>
-                    <img src="/images/ava.jpg" />
+                    <img src={ava}/>
                 </div>
             </div>
 
