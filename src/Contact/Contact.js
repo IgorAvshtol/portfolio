@@ -2,6 +2,7 @@ import style from './Contact.module.scss';
 import styleContainer from '../Common/Styles/Container.module.scss';
 import Title from "../Common/component/title/Title";
 import * as emailjs from "emailjs-com";
+import {useState} from "react";
 
 
 const SERVICE_ID = "service_k8s5o7y";
@@ -16,10 +17,13 @@ const Contact = () => {
         emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
             .then((result) => {
                 console.log(result.text);
+                alert("Thank you for message")
             }, (error) => {
                 console.log(error.text);
             });
     }
+
+
 
     return (<div id="contacts" className={style.contactBlock}>
             <div className={`${styleContainer.container} ${style.contact}`}>

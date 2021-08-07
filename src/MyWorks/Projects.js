@@ -24,12 +24,10 @@ const Projects = () => {
                     <Project img={Social}
                              url={'https://igoravshtol.github.io/social-network-ts/'}
                              title={"Social-network"}
-                        // discription={"abcdefghdfhgdfsdg  fdfdsdfsfssfsfsfsdfs gfhfghfghfg"}
                     />
                     <Project img={TodoList}
                              url={'https://igoravshtol.github.io/TodoList/'}
                              title={"TodoList"}
-                        // discription={"...hijkdfgdgdfgdf dgdfgdfh  gdg  dfgd.gdgdsgfsdfsdfsdfsdfsdfsdfs  dfsdfdsfdsfdsfdsfdsfsdfsfsfds"}
                     />
                 </div>
             </div>
